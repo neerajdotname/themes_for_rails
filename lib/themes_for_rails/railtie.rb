@@ -1,5 +1,4 @@
 # ActiveSupport.on_load(:action_view) { include Devise::Controllers::UrlHelpers }
-
 module ThemesForRails
   class Railtie < ::Rails::Railtie
     config.themes_for_rails = ActiveSupport::OrderedOptions.new

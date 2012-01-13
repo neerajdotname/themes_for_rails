@@ -16,7 +16,8 @@ module ThemesForRails
       end
       def current_theme_image_path(asset)
         image, extension = asset.split(".")
-        base_theme_image_path(:theme => self.theme_name, :asset => "#{image}.#{extension}")
+        #base_theme_image_path(:theme => self.theme_name, :asset => "#{image}.#{extension}")
+        "/themes/#{self.theme_name}/images/#{asset}"
       end
     end
   end
