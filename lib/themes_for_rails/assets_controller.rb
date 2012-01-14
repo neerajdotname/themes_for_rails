@@ -7,11 +7,11 @@ module ThemesForRails
     include ThemesForRails::UrlHelpers
 
     def stylesheets
-      handle_asset(params[:asset], params[:theme], "stylesheets")
+      handle_asset(params[:asset], params[:theme], "assets/stylesheets")
     end
 
     def javascripts
-      handle_asset(params[:asset], params[:theme], "javascripts")
+      handle_asset(params[:asset], params[:theme], "assets/javascripts")
     end
 
     def images
